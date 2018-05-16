@@ -4,7 +4,7 @@ flow = new FlowComponent
 flow.showNext(rootLayers[0])
 
 next = =>
-	index = flow.stack.length
+	index = flow.stack.length - 1
 	nextLayer = rootLayers[index + 1]
 	flow.showNext(nextLayer) if nextLayer
 
